@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+        tr:nth-child(even) {
+            background: #F7F7F7;
+        }
+
+        td {
+            border: 1px solid black;
+            position: relative;
+            text-align: center
+        }
+
+        th {
+            border: 1px solid black;
+            position: relative;
+            text-align: center;
+            font-size: 22px;
+            background-color: rgba(0, 0, 0, 0.2);
+            position: relative;
+            min-width: 55px;
+        }
+
+        th[data-sort='desc']:after {
+            content: "▼";
+            font-size: 14px;
+        }
+
+        th[data-sort='asc']:after {
+            content: "▲";
+            font-size: 14px;
+        }
+
+        input {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <label><input class="checkbox" type="checkbox" value="ID">N</label>
+    <label><input class="checkbox" type="checkbox" value="checkbox1">Name</label>
+    <label><input class="checkbox" type="checkbox" value="checkbox2">Website</label>
+    <label><input class="checkbox" type="checkbox" value="checkbox3">Phone</label>
+    <label><input class="checkbox" type="checkbox" value="checkbox4">Email</label>
+    <label><input class="checkbox" type="checkbox" value="checkbox5"></label>
+    <button onclick="getCheckedCheckBoxes()"> Кто выбран? </button> -->
+    <script src="table.js"></script>
+</body>
+
+</html>
